@@ -1,0 +1,266 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  /* font-size: 13px; */
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+h2{
+  font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+}
+header{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(235,251,255, 0.5),rgba(235,251,255, 0.5)), url('images/bg-hero-mobile.svg');
+  background-position: center;
+  background-size: cover;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  height: 12%;
+  width: 100%;
+  padding-right: 8%;
+  padding-left: 8%;
+}
+.nav-link{
+  text-align: right;
+  flex: 1;
+}
+.logo{
+  width: 100px;
+}
+.try li a{
+  background-color: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  padding: 6px;
+  box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, .2);
+  text-decoration: none;
+  color: rgb(0,37,46);
+}
+.try li{
+  list-style: none;
+}
+.try li a:hover{
+  background-color:rgb(255,82,191);
+  /* background-color:rgb(235,251,255); */
+  color:rgb(255, 255, 255);
+  transition: .5s;
+}
+.hero{
+  margin-top: 15%;
+  width: 100%;
+}
+.hero-text{
+  text-align: center;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.hero-text h2{
+  margin-bottom: 5%;
+}
+.hero-text p{
+  line-height: 1.5;
+}
+.get{
+  background-color:rgb(255,82,191);
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px 15px;
+  box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, .2);
+  margin-top: 10%;
+  cursor: pointer;
+  
+}
+.get:hover{
+  background-color:rgb(190, 8, 124);
+  transition: .5s;
+  box-shadow: 1px 2px 4px 3px rgb(255,82,191, .4);
+}
+.get a{
+  text-decoration: none;
+  color: #fff;
+}
+.Illustration img {
+  width: 100%;
+}
+.Illustration{
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-top: 10%;
+}
+.main-child{
+  padding-left: 8%;
+  padding-right: 8%;
+  margin: 10% 6%;
+  box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, .1);
+  padding: 8%;
+  text-align: center;
+  border-radius: 10px;
+}
+ .main-child h3{
+  margin: 10% 0;
+}
+.image img {
+  width: 100%;
+}
+.ready{
+  padding-left: 8%;
+  padding-right: 8%;
+  margin: 10% 6%;
+  box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, .1);
+  padding: 8%;
+  text-align: center;
+  border-radius: 10px;
+}
+#footer{
+  background-color:rgb(0,37,46);
+  padding: 20% 8% 10% 8%;
+}
+.under{
+  margin-bottom: 8%;
+}
+.under-logo{
+  margin-bottom: 8%;
+}
+.under-logo p{
+  font-size: 13px;
+}
+.nav{
+  margin-top: 10%;
+}
+.nav ul li{
+  list-style: none;
+}
+.nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+.nav-2{
+  margin-bottom: 10%;
+}
+#footer p{
+  color: #fff;
+}
+.copy{
+  text-align: center;
+  
+}
+.copy p{
+   font-size: 13px;
+}
+p img{
+  margin-right: 5%;
+}
+.contact-info p{
+  font-size: 13px;
+  margin-bottom: 5%;
+}
+.width{
+  width: 50%;
+  margin-right: 10%;
+}
+.nav ul li{
+  margin-top: 5%;
+}
+.nav ul li:first-child{
+  margin-top: 0;
+}
+
+/* media */
+@media screen and (min-width: 376px) and (min-width: 800px) {
+  h3{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+  p{
+    font-size: 18px;
+  }
+    #header{
+        background-image: linear-gradient(rgba(235,251,255, 0.5),rgba(235,251,255, 0.5)), url('images/bg-hero-desktop.svg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+    }
+    .hero{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 5%;
+      width: 100%;
+    }
+    .hero-text{
+      text-align: left;
+      margin-top: 10%;
+      padding: 0 10% ;
+    }
+    .Illustration img {
+      width: 100%;
+    }
+    .main-child{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text{
+      margin-left: 8%;
+    }
+    .copy p, #footer p{
+      font-size: 1.5rem;
+   }
+   #footer{
+    background-color:rgb(0,37,46);
+    padding: 5%;
+    width: 100%;
+  }
+  .flex{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .width{
+    width: 50%;
+    margin-right: 10%;
+  }
+  .width:last-child{
+    margin-right: 0;
+  }
+  .ready h5{
+    font-size: 2rem;
+  }
+  .footer-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav ul li{
+    margin-top: 10%;
+  }
+  .nav ul li:first-child{
+    margin-top: 0;
+  }
+  .try li a{
+    padding: 10px 30px;
+  }
+  .logo{
+    width: 150px;
+  }
+}
